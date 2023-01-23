@@ -1,0 +1,68 @@
+.backdrop{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.4);
+        
+    @media screen and (min-width:1200px) {
+            transition: opacity $cubik, visibility $cubik;
+        }
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    @media screen and (min-width:480px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
+}
+
+.modal-button{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: currentColor;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $accent-color-text;
+    }
+
+    @media screen and (min-width:1200px) {
+        transition: color $cubik;
+        }
+    }
+
+

@@ -1,0 +1,14 @@
+@mixin logo($add:1.16,$type:$main-color-text){
+    text-decoration: none;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: $add;
+    letter-spacing: 0.03em;
+    color:$accent-color-text;
+
+        &__second{
+            color:$type;
+        }
+}

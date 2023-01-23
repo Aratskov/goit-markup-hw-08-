@@ -1,0 +1,37 @@
+body{
+    color:$main-color-text;
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+}
+
+body.modal-open{
+overflow: hidden;
+}
+
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    width: 100%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

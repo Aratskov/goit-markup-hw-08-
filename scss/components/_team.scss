@@ -1,0 +1,64 @@
+.title{
+    @extend %title;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px){
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
+        
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    &__item{
+        width: 100%;
+
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width:768px) {
+            width: calc((100% - 30px)/2);
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: calc((100% - 90px)/4);
+        }
+    }
+}
+
+
+.team-wrap{
+    padding-top: 30px;
+    padding-bottom: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+
+    &__name{
+        @extend %team;
+
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+
+    &__job{
+        @extend %team;
+        
+        margin-bottom: 16px;
+        color: $second-color-text;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 24px;
+    }
+}
+    
+    

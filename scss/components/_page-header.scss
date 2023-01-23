@@ -1,0 +1,133 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    @media screen and (max-width:767px) {
+        display: none;
+        position: absolute;
+            top: 100%;
+            left: 0;
+        
+            width: 100%;
+           
+        
+            background-color: beige;
+            padding: 48px 83px 40px 40px;
+            font-size: 20px;
+            text-align: center;
+        
+            &.is-open {
+                display: block;
+            }
+        }
+}
+
+
+.auth-nav{
+   
+    @media screen and (min-width:768px) {
+        display: flex;
+        gap: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    } 
+   
+    &__link{
+    color: $main-color-text;
+        
+        &--active{
+        color:$accent-color-text;
+        }
+    
+    @media screen and (min-width:768px) {
+        position: relative;
+        display: block;
+        padding: 32px 0;
+    
+        &--active::after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $accent-color-text;
+        }
+        
+        @media screen and (min-width:1200px) {
+        & {
+            transition: color $cubik;
+        }
+        
+        &:hover,
+        &:focus {
+            color: $accent-color-text;
+        }
+        }
+    }
+    }
+    }
+    
+.cont-nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    
+        
+        &__link{
+            @extend %navbar-cont;
+    
+            display: flex;
+            align-items: center;
+            gap: 10px;
+             
+            @media screen and(min-width:1200px) {
+                &{
+                font-size: 14px;
+                padding: 32px 0;
+                transition: color $cubik;
+                fill: currentColor;
+                }
+                
+                &:hover,&:focus{
+                color: $accent-color-text;
+                }
+             }
+    
+            
+            
+        }
+    
+       
+        
+        @media screen and (min-width:1200px) {
+           display: flex;
+           flex-direction: row;
+           gap: 50px;
+        }
+    }
+    
+    
+
+
+
+
+
+
+
