@@ -35,6 +35,7 @@
         height: 100vh;
         background-color: #ffffff;
         z-index: 5;
+        overflow-y: scroll;
 
         &__list{
             display: flex;

@@ -252,6 +252,7 @@ img {
     height: 100vh;
     background-color: #ffffff;
     z-index: 5;
+    overflow-y: scroll;
   }
   .mob-menu__list {
     display: flex;
