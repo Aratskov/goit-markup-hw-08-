@@ -297,9 +297,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-}
-.soc-menu__item:not(:last-child) {
   position: relative;
+}
+.soc-menu__item:not(:last-child)::after {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  transform: translateX(10px);
 }
 .soc-menu__link {
   text-decoration: none;
@@ -308,15 +314,6 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
-}
-.soc-menu__link::after {
-  content: "";
-  bottom: 50%;
-  position: absolute;
-  width: 22px;
-  height: 1px;
-  background-color: rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
 }
 
 .mob-menu-cont--tel {
