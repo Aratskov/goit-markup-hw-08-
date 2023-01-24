@@ -34,7 +34,7 @@
     border-radius: 4px;
     transition: transform $cubik;
 
-    @media screen and (max-width:767px) {
+    @media screen and (min-width:480px) {
         width: 450px;
         height: 609px;
     }
