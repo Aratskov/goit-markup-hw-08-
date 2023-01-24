@@ -418,16 +418,22 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  fill: currentColor;
 }
 @media screen and (min-width: 1200px) {
   .cont-nav__link {
     font-size: 14px;
     padding: 32px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: currentColor;
   }
   .cont-nav__link:hover, .cont-nav__link:focus {
     color: #2196F3;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cont-nav__icon {
+    width: 14px;
+    height: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -752,13 +758,19 @@ img {
   }
 }
 
-.address {
+.address-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 8px;
+  text-align: center;
 }
-.address__link {
+@media screen and (min-width: 1200px) {
+  .address-list {
+    text-align: start;
+  }
+}
+
+.address-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -767,12 +779,12 @@ img {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-.address__link:nth-child(n+2) {
+.address-item:nth-child(n+2) .address-link {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
-  .address__link:nth-child(n+2):hover, .address__link:nth-child(n+2):focus {
+  .address-item:nth-child(n+2) .address-link:hover, .address-item:nth-child(n+2) .address-link:focus {
     color: #2196F3;
   }
 }
@@ -1242,4 +1254,10 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-meta-exception {
+    padding-bottom: 56px;
+  }
 }/*# sourceMappingURL=main.css.map */

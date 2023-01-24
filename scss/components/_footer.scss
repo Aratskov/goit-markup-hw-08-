@@ -30,34 +30,38 @@
 }
 
 
-.address{
+.address-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 8px;
+    text-align: center;
 
-    &__link{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+    @media screen and (min-width:1200px) {
+        text-align: start;
+    }
+}
 
-        &:nth-child(n+2){
-            color:rgba(255, 255, 255, 0.6);
-            transition: color $cubik;
+.address-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 
-            &:hover,&:focus{
-                @media screen and (min-width:1200px) {
-                    color: #2196F3;
-                }
+    .address-item:nth-child(n+2) & {
+        color: rgba(255, 255, 255, 0.6);
+        transition: color $cubik;
+
+        &:hover,
+        &:focus {
+            @media screen and (min-width:1200px) {
+                color: #2196F3;
             }
         }
-
-
     }
+
 
 }
 
