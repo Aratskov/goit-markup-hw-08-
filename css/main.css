@@ -465,14 +465,14 @@ img {
 }
 
 .hero {
-  background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-mob.jpg);
+  margin: 0 auto;
   padding: 118px 0;
+  max-width: 480px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-mob.jpg);
+  background-color: #2F303A;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 480px;
-  margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -481,8 +481,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-tab.jpg);
     max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -492,8 +492,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-des.jpg);
     max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-des.jpg);
     padding: 200px 0;
   }
 }
@@ -951,7 +951,7 @@ img {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -960,7 +960,6 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
   }
 }
