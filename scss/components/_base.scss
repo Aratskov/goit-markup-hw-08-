@@ -4,9 +4,6 @@ body{
     box-sizing: border-box;
 }
 
-body.modal-open{
-overflow: hidden;
-}
 
 
 .list{
@@ -32,6 +29,6 @@ img{
     width: 100%;
 }
 
-.no-scroll {
-    overflow: hidden;
-}
+// .no-scroll {
+//     overflow: hidden;
+// }
