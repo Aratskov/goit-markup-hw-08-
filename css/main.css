@@ -1088,6 +1088,20 @@ body.no-scroll {
   color: rgba(117, 117, 117, 0.5);
 }
 @media screen and (min-width: 1200px) {
+  .modal-form__comment::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal-form__comment:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal-form__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
   .modal-form__comment {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
