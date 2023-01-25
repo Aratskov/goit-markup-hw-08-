@@ -131,6 +131,10 @@ img {
   width: 100%;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   box-sizing: border-box;
   padding-left: 15px;
